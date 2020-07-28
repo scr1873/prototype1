@@ -1,0 +1,94 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "6d779bc8-8f8a-425a-a147-84cff4b89b8a": {
+        "id": "6d779bc8-8f8a-425a-a147-84cff4b89b8a",
+        "parent": null,
+        "name": "Prototype1.py",
+        "type": "PYTHON_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "Prototype1.py",
+        "cursor": {
+          "lineNumber": 2,
+          "column": 16
+        },
+        "config": {
+          "runtime": "python3.8",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [],
+          "name": "Prototype1"
+        },
+        "triggers": [
+          {
+            "resourceName": "alexaSKebedd5a41937498ebb6f78d85ac23180",
+            "config": {}
+          }
+        ]
+      }
+    },
+    "openFiles": [
+      "6d779bc8-8f8a-425a-a147-84cff4b89b8a"
+    ],
+    "currentFileId": "6d779bc8-8f8a-425a-a147-84cff4b89b8a",
+    "resources": {
+      "alexaSKebedd5a41937498ebb6f78d85ac23180": {
+        "name": "alexaSKebedd5a41937498ebb6f78d85ac23180",
+        "type": "ALEXA",
+        "config": {
+          "type": 1,
+          "verifiedID": true,
+          "skillID": "amzn1.ask.skill.ebedd5a4-1937-498e-bb6f-78d85ac23180",
+          "applicationID": ""
+        }
+      }
+    },
+    "customTemplate": {
+      "syntax": "JSON",
+      "overrideDefault": false,
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {
+        "ask_sdk_core": {
+          "name": "ask_sdk_core",
+          "version": "1.13.0",
+          "dev": false,
+          "language": "python"
+        }
+      }
+    }
+  },
+  "PROJECT_META": {
+    "sigmaVersion": "1.4.1.1",
+    "projectName": "Prototype1",
+    "projectDescription": "First prototype of Alexa health skill",
+    "projectVersion": "1.0.0",
+    "projectRegion": "ap-southeast-2",
+    "platform": "AWS",
+    "language": "python",
+    "platformRegions": {},
+    "lastSave": 1595902401072
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "prototype1",
+      "url": "https://github.com/scr1873/prototype1"
+    }
+  }
+}
