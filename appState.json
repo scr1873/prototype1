@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "Prototype1.py",
         "cursor": {
-          "lineNumber": 2,
-          "column": 16
+          "lineNumber": 56,
+          "column": 23
         },
         "config": {
           "runtime": "python3.8",
@@ -44,12 +44,30 @@
           "skillID": "amzn1.ask.skill.ebedd5a4-1937-498e-bb6f-78d85ac23180",
           "applicationID": ""
         }
+      },
+      "ddbHealth": {
+        "name": "ddbHealth",
+        "type": "DynamoDB",
+        "config": {
+          "mode": 1,
+          "table": {
+            "arn": "arn:aws:dynamodb:ap-southeast-2:654256740456:table/Health",
+            "name": "Health",
+            "partitionKey": "userID",
+            "partitionKeyType": "S",
+            "hasSortKey": false,
+            "sortKey": "",
+            "sortKeyType": "S",
+            "payPerRequest": true,
+            "mode": 1
+          }
+        }
       }
     },
     "customTemplate": {
       "syntax": "JSON",
       "overrideDefault": false,
-      "dialect": null,
+      "dialect": "CloudFormation",
       "definitions": null
     },
     "envVariables": [
@@ -69,12 +87,19 @@
           "version": "1.13.0",
           "dev": false,
           "language": "python"
+        },
+        "boto3": {
+          "name": "boto3",
+          "language": "python",
+          "version": "1.12.27",
+          "dev": true,
+          "notRemovable": false
         }
       }
     }
   },
   "PROJECT_META": {
-    "sigmaVersion": "1.4.1.1",
+    "sigmaVersion": "1.4.1.2",
     "projectName": "Prototype1",
     "projectDescription": "First prototype of Alexa health skill",
     "projectVersion": "1.0.0",
@@ -82,7 +107,7 @@
     "platform": "AWS",
     "language": "python",
     "platformRegions": {},
-    "lastSave": 1595902401072
+    "lastSave": 1596756406100
   },
   "VCS_STATE": {
     "provider": "GitHub",

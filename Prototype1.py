@@ -1,3 +1,5 @@
+import boto3
+ddb = boto3.client("dynamodb")
 from ask_sdk_core.skill_builder import CustomSkillBuilder
 from ask_sdk_core.dispatch_components import AbstractRequestHandler
 from ask_sdk_core.dispatch_components import AbstractExceptionHandler
@@ -42,6 +44,31 @@ class ReportDataIntentHandler(AbstractRequestHandler):
         name = slots["name"].value
         value = slots["value"].value
         unit = slots["unit"].value
+        try:
+            data = ddb.put_item(
+                TableName="Health",
+                Item={
+                    'Datatype': {
+                        'S': datatype
+                    },
+                    'Name': {
+                        'S': name
+                    },
+                    'Value': {
+                        'S': value
+                    },
+                    'Unit': {
+                        'S': unit
+                    },
+                    'userID': {
+                        'S': 23498
+                    }
+                }
+            )
+        except BaseException as e:
+            print(e)
+            raise(e)
+        
         
         # get device id
         sys_object = handler_input.request_envelope.context.system
