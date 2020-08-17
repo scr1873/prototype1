@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "Prototype1.py",
         "cursor": {
-          "lineNumber": 56,
-          "column": 23
+          "lineNumber": 3,
+          "column": 13
         },
         "config": {
           "runtime": "python3.8",
@@ -99,7 +99,7 @@
     }
   },
   "PROJECT_META": {
-    "sigmaVersion": "1.4.1.2",
+    "sigmaVersion": "1.4.1.5",
     "projectName": "Prototype1",
     "projectDescription": "First prototype of Alexa health skill",
     "projectVersion": "1.0.0",
@@ -107,7 +107,7 @@
     "platform": "AWS",
     "language": "python",
     "platformRegions": {},
-    "lastSave": 1596756406100
+    "lastSave": 1597644457168
   },
   "VCS_STATE": {
     "provider": "GitHub",
