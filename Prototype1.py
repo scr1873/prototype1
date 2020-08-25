@@ -84,7 +84,6 @@ class ReportDataIntentHandler(AbstractRequestHandler):
         try:
             r = requests.get(url, headers=headers)
             res = r.json()
-            logger.info("Device API result: {}".format(str(res)))
             userTimeZone = res
         except Exception:
             handler_input.response_builder.speak("There was a problem connecting to the service")
@@ -188,7 +187,6 @@ class CatchAllExceptionHandler(AbstractExceptionHandler):
 
     def handle(self, handler_input, exception):
         # type: (HandlerInput, Exception) -> Response
-        logger.error(exception, exc_info=True)
 
         speak_output = "Sorry, I had trouble doing what you asked. Please try again."
 
