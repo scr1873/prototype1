@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "Prototype1.py",
         "cursor": {
-          "lineNumber": 9,
-          "column": 35
+          "lineNumber": 207,
+          "column": 19
         },
         "config": {
           "runtime": "python3.8",
@@ -27,7 +27,16 @@
             "resourceName": "alexaSKebedd5a41937498ebb6f78d85ac23180",
             "config": {}
           }
-        ]
+        ],
+        "testCases": {
+          "a74735bb-303b-4c96-8241-1d5b87472826": {
+            "id": "a74735bb-303b-4c96-8241-1d5b87472826",
+            "name": "Test event",
+            "functionId": "6d779bc8-8f8a-425a-a147-84cff4b89b8a",
+            "event": "{\"key1\": \"value1\", \"key2\": \"value2\", \"key3\": \"value3\"}",
+            "eventTemplate": "hello-world"
+          }
+        }
       }
     },
     "openFiles": [
@@ -107,7 +116,7 @@
     "platform": "AWS",
     "language": "python",
     "platformRegions": {},
-    "lastSave": 1598322152157
+    "lastSave": 1598391970281
   },
   "VCS_STATE": {
     "provider": "GitHub",

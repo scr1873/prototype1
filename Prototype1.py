@@ -204,7 +204,7 @@ class CatchAllExceptionHandler(AbstractExceptionHandler):
 # defined are included below. The order matters - they're processed top to bottom.
 
 
-sb = CustomSkillBuilder(persistence_adapter=s3_adapter)
+sb = SkillBuilder()
 
 sb.add_request_handler(LaunchRequestHandler())
 sb.add_request_handler(ReportDataIntentHandler())
