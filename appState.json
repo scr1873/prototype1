@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "Prototype1.py",
         "cursor": {
-          "lineNumber": 207,
-          "column": 19
+          "lineNumber": 6,
+          "column": 35
         },
         "config": {
           "runtime": "python3.8",
@@ -33,7 +33,14 @@
             "id": "a74735bb-303b-4c96-8241-1d5b87472826",
             "name": "Test event",
             "functionId": "6d779bc8-8f8a-425a-a147-84cff4b89b8a",
-            "event": "{\"key1\": \"value1\", \"key2\": \"value2\", \"key3\": \"value3\"}",
+            "event": "{\r\n    \"key1\": \"value1\",\r\n    \"key2\": \"value2\",\r\n    \"key3\": \"value3\"\r\n}",
+            "eventTemplate": "hello-world"
+          },
+          "26e6ba8b-01a3-4a33-bc59-7bd9fa5bcaf1": {
+            "id": "26e6ba8b-01a3-4a33-bc59-7bd9fa5bcaf1",
+            "name": "Test event",
+            "functionId": "6d779bc8-8f8a-425a-a147-84cff4b89b8a",
+            "event": "{\r\n    \"key1\": \"value1\",\r\n    \"key2\": \"value2\",\r\n    \"key3\": \"value3\"\r\n}",
             "eventTemplate": "hello-world"
           }
         }
@@ -116,7 +123,7 @@
     "platform": "AWS",
     "language": "python",
     "platformRegions": {},
-    "lastSave": 1598391970281
+    "lastSave": 1598392087588
   },
   "VCS_STATE": {
     "provider": "GitHub",
