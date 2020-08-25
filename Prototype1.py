@@ -8,9 +8,6 @@ from ask_sdk_core.handler_input import HandlerInput
 
 from ask_sdk_model import Response
 
-logger = logging.getLogger(__name__)
-logger.setLevel(logging.INFO)
-
 
 class LaunchRequestHandler(AbstractRequestHandler):
     """Handler for Skill Launch."""
@@ -217,8 +214,6 @@ sb.add_request_handler(SessionEndedRequestHandler())
 sb.add_request_handler(IntentReflectorHandler()) # make sure IntentReflectorHandler is last so it doesn't override your custom intent handlers
 
 sb.add_exception_handler(CatchAllExceptionHandler())
-
-lambda_handler = sb.lambda_handler()
 
 def handler(event, context):
     return sb.lambda_handler()(event, context)
