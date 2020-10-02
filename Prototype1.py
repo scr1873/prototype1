@@ -58,7 +58,7 @@ class ReportDataIntentHandler(AbstractRequestHandler):
                         'S': unit
                     },
                     'userID': {
-                        'S': 23498
+                        'S': '23498'
                     }
                 }
             )
@@ -132,7 +132,6 @@ sb = SkillBuilder()
 
 sb.add_request_handler(LaunchRequestHandler())
 sb.add_request_handler(ReportDataIntentHandler())
-sb.add_request_handler(HelpIntentHandler())
 sb.add_request_handler(CancelOrStopIntentHandler())
 sb.add_request_handler(SessionEndedRequestHandler())
 
