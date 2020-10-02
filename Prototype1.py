@@ -18,7 +18,7 @@ class LaunchRequestHandler(AbstractRequestHandler):
 
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
-        speak_output = "hey"
+        speak_output = ""
 
         return (
             handler_input.response_builder
@@ -68,32 +68,8 @@ class ReportDataIntentHandler(AbstractRequestHandler):
             raise(e)
         
         
-        # get device id
-        sys_object = handler_input.request_envelope.context.system
-        device_id = sys_object.device.device_id
-
-        # get Alexa Settings API information
-        api_endpoint = sys_object.api_endpoint
-        api_access_token = sys_object.api_access_token
-        
-        # construct systems api timezone url
-        url = '{api_endpoint}/v2/devices/{device_id}/settings/System.timeZone'.format(api_endpoint=api_endpoint, device_id=device_id)
-        headers = {'Authorization': 'Bearer ' + api_access_token}
-
-        userTimeZone = ""
-        try:
-            r = requests.get(url, headers=headers)
-            res = r.json()
-            userTimeZone = res
-        except Exception:
-            handler_input.response_builder.speak("There was a problem connecting to the service")
-            return handler_input.response_builder.response
-            
-        
-        # getting the current date with the time
-        now_time = datetime.now(timezone(userTimeZone))
-        
-        speak_output = "added {} at {} for {} {} {}".format(datatype, value, name, unit, nowtime)
+       
+        speak_output = "added {} at {} for {} {}".format(datatype, value, name, unit)
 
         return (
             handler_input.response_builder
