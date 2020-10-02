@@ -1,10 +1,10 @@
 
 import boto3
-import ask_sdk_core
 ddb = boto3.client("dynamodb")
 from ask_sdk_core.skill_builder import SkillBuilder
 from ask_sdk_core.dispatch_components import AbstractRequestHandler
 from ask_sdk_core.dispatch_components import AbstractExceptionHandler
+from ask_sdk_core.utils import is_request_type, is_intent_name
 from ask_sdk_core.handler_input import HandlerInput
 
 from ask_sdk_model import Response
@@ -24,7 +24,7 @@ class LaunchRequestHandler(AbstractRequestHandler):
         return (
             handler_input.response_builder
                 .speak(speak_output)
-                .ask(speak_output)
+                #.ask(speak_output)
                 .response
         )
 
@@ -43,7 +43,7 @@ class ReportDataIntentHandler(AbstractRequestHandler):
         name = slots["name"].value
         value = slots["value"].value
         unit = slots["unit"].value
-        try:
+        """try:
             data = ddb.put_item(
                 TableName="Health",
                 Item={
@@ -66,7 +66,7 @@ class ReportDataIntentHandler(AbstractRequestHandler):
             )
         except BaseException as e:
             print(e)
-            raise(e)
+            raise(e)"""
         
        
         speak_output = "added {} at {} for {} {}".format(datatype, value, name, unit)
