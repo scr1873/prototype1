@@ -65,23 +65,23 @@ class ReportDataIntentHandler(AbstractRequestHandler):
         except BaseException as e:
             print(e)
             raise(e)
-            
+
         a = 3
-            try:
-                data = ddb.put_item(
-                    TableName="Health",
-                    Item={
-                        'userID': {
-                            'S': "23232"
-                        },
-                        'test': {
-                            'S': a
-                        }
+        try:
+            data = ddb.put_item(
+                TableName="Health",
+                Item={
+                    'userID': {
+                        'S': "23232"
+                    },
+                    'test': {
+                        'S': a
                     }
-                )
-            except BaseException as e:
-                print(e)
-                raise(e)
+                }
+            )
+        except BaseException as e:
+            print(e)
+            raise(e)
         
         speak_output = "added {} at {} for {} {}".format(datatype, value, name, unit)
 
