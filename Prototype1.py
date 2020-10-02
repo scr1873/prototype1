@@ -58,7 +58,7 @@ class ReportDataIntentHandler(AbstractRequestHandler):
                         'S': unit
                     },
                     'userID': {
-                        'S': '23498'
+                        'S': '3423425675675'
                     }
                 }
             )
