@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "Prototype1.py",
         "cursor": {
-          "lineNumber": 25,
-          "column": 9
+          "lineNumber": 122,
+          "column": 25
         },
         "config": {
           "runtime": "python3.8",
@@ -33,8 +33,8 @@
             "id": "a74735bb-303b-4c96-8241-1d5b87472826",
             "name": "Test event",
             "functionId": "6d779bc8-8f8a-425a-a147-84cff4b89b8a",
-            "event": "{\r\n    \"key1\": \"value1\",\r\n    \"key2\": \"value2\",\r\n    \"key3\": \"value3\"\r\n}",
-            "eventTemplate": "hello-world"
+            "event": "{\r\n    \"version\": \"1.0\",\r\n    \"session\": {\r\n        \"new\": true,\r\n        \"sessionId\": \"amzn1.echo-api.session.123456789012\",\r\n        \"application\": {\r\n            \"applicationId\": \"amzn1.ask.skill.987654321\"\r\n        },\r\n        \"user\": {\r\n            \"userId\": \"amzn1.ask.account.testUser\"\r\n        },\r\n        \"attributes\": {}\r\n    },\r\n    \"context\": {\r\n        \"AudioPlayer\": {\r\n            \"playerActivity\": \"IDLE\"\r\n        },\r\n        \"System\": {\r\n            \"application\": {\r\n                \"applicationId\": \"amzn1.ask.skill.987654321\"\r\n            },\r\n            \"user\": {\r\n                \"userId\": \"amzn1.ask.account.testUser\"\r\n            },\r\n            \"device\": {\r\n                \"supportedInterfaces\": {\r\n                    \"AudioPlayer\": {}\r\n                }\r\n            }\r\n        }\r\n    },\r\n    \"request\": {\r\n        \"type\": \"LaunchRequest\",\r\n        \"requestId\": \"amzn1.echo-api.request.1234\",\r\n        \"timestamp\": \"2016-10-27T18:21:44Z\",\r\n        \"locale\": \"en-US\"\r\n    }\r\n}",
+            "eventTemplate": "alexa-skills-kit-start-session"
           },
           "26e6ba8b-01a3-4a33-bc59-7bd9fa5bcaf1": {
             "id": "26e6ba8b-01a3-4a33-bc59-7bd9fa5bcaf1",
@@ -123,7 +123,7 @@
     "platform": "AWS",
     "language": "python",
     "platformRegions": {},
-    "lastSave": 1601602895694
+    "lastSave": 1601603128487
   },
   "VCS_STATE": {
     "provider": "GitHub",

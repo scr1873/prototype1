@@ -69,31 +69,8 @@ class ReportDataIntentHandler(AbstractRequestHandler):
        
         speak_output = "added {} at {} for {} {}".format(datatype, value, name, unit)
 
-        return (
-            handler_input.response_builder
-                .speak(speak_output)
-                # .ask("add a reprompt if you want to keep the session open for the user to respond")
-                .response
-        )
-
-
-class HelpIntentHandler(AbstractRequestHandler):
-    """Handler for Help Intent."""
-    def can_handle(self, handler_input):
-        # type: (HandlerInput) -> bool
-        return is_intent_name("AMAZON.HelpIntent")(handler_input)
-
-    def handle(self, handler_input):
-        # type: (HandlerInput) -> Response
-        speak_output = "You can say hello to me! How can I help?"
-
-        return (
-            handler_input.response_builder
-                .speak(speak_output)
-                .ask(speak_output)
-                .response
-        )
-
+        handler_input.response_builder.speak(speak_output)
+        return handler_input.response_builder.response
 
 class CancelOrStopIntentHandler(AbstractRequestHandler):
     """Single handler for Cancel and Stop Intent."""
@@ -106,11 +83,9 @@ class CancelOrStopIntentHandler(AbstractRequestHandler):
         # type: (HandlerInput) -> Response
         speak_output = "Goodbye!"
 
-        return (
-            handler_input.response_builder
-                .speak(speak_output)
-                .response
-        )
+        handler_input.response_builder.speak(speak_output)
+        return handler_input.response_builder.response
+        
 
 
 class SessionEndedRequestHandler(AbstractRequestHandler):
