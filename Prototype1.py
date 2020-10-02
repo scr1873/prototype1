@@ -1,5 +1,6 @@
 
 import boto3
+import ask_sdk_core
 ddb = boto3.client("dynamodb")
 from ask_sdk_core.skill_builder import SkillBuilder
 from ask_sdk_core.dispatch_components import AbstractRequestHandler
@@ -18,7 +19,7 @@ class LaunchRequestHandler(AbstractRequestHandler):
 
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
-        speak_output = ""
+        speak_output = "test"
 
         return (
             handler_input.response_builder
@@ -66,7 +67,6 @@ class ReportDataIntentHandler(AbstractRequestHandler):
         except BaseException as e:
             print(e)
             raise(e)
-        
         
        
         speak_output = "added {} at {} for {} {}".format(datatype, value, name, unit)
