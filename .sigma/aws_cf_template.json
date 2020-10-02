@@ -80,24 +80,7 @@
               }
             }
           ]
-        },
-        "Policies": [
-          {
-            "PolicyName": "Prototype1Policy",
-            "PolicyDocument": {
-              "Version": "2012-10-17",
-              "Statement": [
-                {
-                  "Effect": "Allow",
-                  "Action": [
-                    "dynamodb:PutItem"
-                  ],
-                  "Resource": "arn:aws:dynamodb:ap-southeast-2:654256740456:table/Health"
-                }
-              ]
-            }
-          }
-        ]
+        }
       }
     },
     "alexaSKebedd5a41937Prototype1Permission": {
