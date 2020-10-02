@@ -1,6 +1,6 @@
 
 import boto3
-ddb = boto3.client("dynamodb")
+ddb = boto3.resource("dynamodb")
 from ask_sdk_core.skill_builder import SkillBuilder
 from ask_sdk_core.dispatch_components import AbstractRequestHandler
 from ask_sdk_core.dispatch_components import AbstractExceptionHandler
@@ -66,23 +66,7 @@ class ReportDataIntentHandler(AbstractRequestHandler):
             print(e)
             raise(e)
 
-        a = 3
-        try:
-            data = ddb.put_item(
-                TableName="Health",
-                Item={
-                    'userID': {
-                        'S': "23232"
-                    },
-                    'test': {
-                        'S': a
-                    }
-                }
-            )
-        except BaseException as e:
-            print(e)
-            raise(e)
-        
+
         speak_output = "added {} at {} for {} {}".format(datatype, value, name, unit)
 
         handler_input.response_builder.speak(speak_output)
