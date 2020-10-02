@@ -21,12 +21,10 @@ class LaunchRequestHandler(AbstractRequestHandler):
         # type: (HandlerInput) -> Response
         speak_output = "test"
 
-        return (
-            handler_input.response_builder
-                .speak(speak_output)
-                #.ask(speak_output)
-                .response
-        )
+        
+        handler_input.response_builder.speak(speak_output)
+        return handler_input.response_builder.response
+
 
 
 class ReportDataIntentHandler(AbstractRequestHandler):

@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "Prototype1.py",
         "cursor": {
-          "lineNumber": 143,
-          "column": 25
+          "lineNumber": 25,
+          "column": 9
         },
         "config": {
           "runtime": "python3.8",
@@ -123,7 +123,7 @@
     "platform": "AWS",
     "language": "python",
     "platformRegions": {},
-    "lastSave": 1601602607095
+    "lastSave": 1601602895694
   },
   "VCS_STATE": {
     "provider": "GitHub",
