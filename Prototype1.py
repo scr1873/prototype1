@@ -41,7 +41,7 @@ class ReportDataIntentHandler(AbstractRequestHandler):
         name = slots["name"].value
         value = slots["value"].value
         unit = slots["unit"].value
-        """try:
+        try:
             data = ddb.put_item(
                 TableName="Health",
                 Item={
@@ -64,7 +64,7 @@ class ReportDataIntentHandler(AbstractRequestHandler):
             )
         except BaseException as e:
             print(e)
-            raise(e)"""
+            raise(e)
         
        
         speak_output = "added {} at {} for {} {}".format(datatype, value, name, unit)
