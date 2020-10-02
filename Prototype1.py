@@ -38,9 +38,12 @@ class ReportDataIntentHandler(AbstractRequestHandler):
         
         slots = handler_input.request_envelope.request.intent.slots
         datatype = slots["datatype"].value
+        datatype="testtype"
         name = slots["name"].value
+        name = "testname"
         value = slots["value"].value
         unit = slots["unit"].value
+        unit = "bpm"
         try:
             data = ddb.put_item(
                 TableName="Health",

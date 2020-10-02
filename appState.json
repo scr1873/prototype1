@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "Prototype1.py",
         "cursor": {
-          "lineNumber": 61,
-          "column": 44
+          "lineNumber": 41,
+          "column": 27
         },
         "config": {
           "runtime": "python3.8",
@@ -33,7 +33,7 @@
             "id": "a74735bb-303b-4c96-8241-1d5b87472826",
             "name": "Test event",
             "functionId": "6d779bc8-8f8a-425a-a147-84cff4b89b8a",
-            "event": "{\r\n    \"version\": \"1.0\",\r\n    \"session\": {\r\n        \"new\": false,\r\n        \"sessionId\": \"amzn1.echo-api.session.123456789012\",\r\n        \"application\": {\r\n            \"applicationId\": \"amzn1.ask.skill.987654321\"\r\n        },\r\n        \"attributes\": {},\r\n        \"user\": {\r\n            \"userId\": \"amzn1.ask.account.testUser\"\r\n        }\r\n    },\r\n    \"context\": {\r\n        \"AudioPlayer\": {\r\n            \"playerActivity\": \"IDLE\"\r\n        },\r\n        \"System\": {\r\n            \"application\": {\r\n                \"applicationId\": \"amzn1.ask.skill.987654321\"\r\n            },\r\n            \"user\": {\r\n                \"userId\": \"amzn1.ask.account.userId\"\r\n            },\r\n            \"device\": {\r\n                \"supportedInterfaces\": {\r\n                    \"AudioPlayer\": {}\r\n                }\r\n            }\r\n        }\r\n    },\r\n    \"request\": {\r\n        \"type\": \"IntentRequest\",\r\n        \"requestId\": \"amzn1.echo-api.request.1234\",\r\n        \"timestamp\": \"2016-10-27T21:06:28Z\",\r\n        \"locale\": \"en-US\",\r\n        \"intent\": {\r\n            \"name\": \"ReportDataIntent\",\r\n            \"slots\": {\r\n                \"datatype\": {\r\n                    \"name\": \"datatype\",\r\n                    \"value\": \"pulse\"\r\n                },\r\n                \"value\": {\r\n                    \"name\": \"value\",\r\n                    \"value\": \"30\"\r\n                },\r\n                \"unit\": {\r\n                    \"name\": \"unit\",\r\n                    \"value\": \"bpm\"\r\n                },\r\n                \"name\": {\r\n                    \"name\": \"name\",\r\n                    \"value\": \"bob's\"\r\n                }\r\n            }\r\n        }\r\n    }\r\n}",
+            "event": "{\r\n    \"version\": \"1.0\",\r\n    \"session\": {\r\n        \"new\": false,\r\n        \"sessionId\": \"amzn1.echo-api.session.123456789012\",\r\n        \"application\": {\r\n            \"applicationId\": \"amzn1.ask.skill.987654321\"\r\n        },\r\n        \"attributes\": {},\r\n        \"user\": {\r\n            \"userId\": \"amzn1.ask.account.testUser\"\r\n        }\r\n    },\r\n    \"context\": {\r\n        \"AudioPlayer\": {\r\n            \"playerActivity\": \"IDLE\"\r\n        },\r\n        \"System\": {\r\n            \"application\": {\r\n                \"applicationId\": \"amzn1.ask.skill.987654321\"\r\n            },\r\n            \"user\": {\r\n                \"userId\": \"amzn1.ask.account.userId\"\r\n            },\r\n            \"device\": {\r\n                \"supportedInterfaces\": {\r\n                    \"AudioPlayer\": {}\r\n                }\r\n            }\r\n        }\r\n    },\r\n    \"request\": {\r\n        \"type\": \"IntentRequest\",\r\n        \"requestId\": \"amzn1.echo-api.request.1234\",\r\n        \"timestamp\": \"2016-10-27T21:06:28Z\",\r\n        \"locale\": \"en-US\",\r\n        \"intent\": {\r\n            \"name\": \"ReportDataIntent\",\r\n            \"slots\": {\r\n                \"datatype\": {\r\n                    \"name\": \"datatype\",\r\n                    \"value\": \"pulse\"\r\n                },\r\n                \"value\": {\r\n                    \"name\": \"value\",\r\n                    \"value\": \"30\"\r\n                },\r\n                \"name\": {\r\n                    \"name\": \"name\",\r\n                    \"value\": \"bob's\"\r\n                }\r\n            }\r\n        }\r\n    }\r\n}",
             "eventTemplate": "alexa-skills-kit-intent-recipe"
           },
           "26e6ba8b-01a3-4a33-bc59-7bd9fa5bcaf1": {
@@ -124,7 +124,7 @@
     "platform": "AWS",
     "language": "python",
     "platformRegions": {},
-    "lastSave": 1601607008089
+    "lastSave": 1601607405833
   },
   "VCS_STATE": {
     "provider": "GitHub",
