@@ -140,7 +140,7 @@ class CatchAllExceptionHandler(AbstractExceptionHandler):
 
     def handle(self, handler_input, exception):
         # type: (HandlerInput, Exception) -> Response
-
+        print(exception)
         speak_output = "Sorry, I had trouble doing what you asked. Please try again."
 
         return (
