@@ -102,7 +102,7 @@
       "dependencies": {
         "ask_sdk_core": {
           "name": "ask_sdk_core",
-          "version": "2.10.0",
+          "version": "1.15.0",
           "dev": false,
           "language": "python"
         },
@@ -125,7 +125,7 @@
     "platform": "AWS",
     "language": "python",
     "platformRegions": {},
-    "lastSave": 1604438283304
+    "lastSave": 1604438597568
   },
   "VCS_STATE": {
     "provider": "GitHub",
