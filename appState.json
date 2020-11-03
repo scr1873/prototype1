@@ -43,7 +43,8 @@
             "event": "{\r\n    \"key1\": \"value1\",\r\n    \"key2\": \"value2\",\r\n    \"key3\": \"value3\"\r\n}",
             "eventTemplate": "hello-world"
           }
-        }
+        },
+        "lastUpdated": 1604437906626
       }
     },
     "openFiles": [
@@ -101,7 +102,7 @@
       "dependencies": {
         "ask_sdk_core": {
           "name": "ask_sdk_core",
-          "version": "1.14.0",
+          "version": "2.10.0",
           "dev": false,
           "language": "python"
         },
@@ -116,7 +117,7 @@
     }
   },
   "PROJECT_META": {
-    "sigmaVersion": "1.4.1.5",
+    "sigmaVersion": "1.4.4.1",
     "projectName": "Prototype1",
     "projectDescription": "First prototype of Alexa health skill",
     "projectVersion": "1.0.0",
@@ -124,7 +125,7 @@
     "platform": "AWS",
     "language": "python",
     "platformRegions": {},
-    "lastSave": 1601607405833
+    "lastSave": 1604438283304
   },
   "VCS_STATE": {
     "provider": "GitHub",
