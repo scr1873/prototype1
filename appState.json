@@ -42,9 +42,16 @@
             "functionId": "6d779bc8-8f8a-425a-a147-84cff4b89b8a",
             "event": "{\r\n    \"key1\": \"value1\",\r\n    \"key2\": \"value2\",\r\n    \"key3\": \"value3\"\r\n}",
             "eventTemplate": "hello-world"
+          },
+          "8b0a7f47-4c13-4943-b1e5-6f6563ea2fd8": {
+            "id": "8b0a7f47-4c13-4943-b1e5-6f6563ea2fd8",
+            "name": "Test event",
+            "functionId": "6d779bc8-8f8a-425a-a147-84cff4b89b8a",
+            "event": "{\r\n    \"version\": \"1.0\",\r\n    \"session\": {\r\n        \"new\": false,\r\n        \"sessionId\": \"amzn1.echo-api.session.123456789012\",\r\n        \"application\": {\r\n            \"applicationId\": \"amzn1.ask.skill.987654321\"\r\n        },\r\n        \"attributes\": {},\r\n        \"user\": {\r\n            \"userId\": \"amzn1.ask.account.testUser\"\r\n        }\r\n    },\r\n    \"context\": {\r\n        \"AudioPlayer\": {\r\n            \"playerActivity\": \"IDLE\"\r\n        },\r\n        \"System\": {\r\n            \"application\": {\r\n                \"applicationId\": \"amzn1.ask.skill.987654321\"\r\n            },\r\n            \"user\": {\r\n                \"userId\": \"amzn1.ask.account.userId\"\r\n            },\r\n            \"device\": {\r\n                \"supportedInterfaces\": {\r\n                    \"AudioPlayer\": {}\r\n                }\r\n            }\r\n        }\r\n    },\r\n    \"request\": {\r\n        \"type\": \"IntentRequest\",\r\n        \"requestId\": \"amzn1.echo-api.request.1234\",\r\n        \"timestamp\": \"2016-10-27T21:06:28Z\",\r\n        \"locale\": \"en-US\",\r\n        \"intent\": {\r\n            \"name\": \"RecipeIntent\",\r\n            \"slots\": {\r\n                \"Item\": {\r\n                    \"name\": \"Item\",\r\n                    \"value\": \"snowball\"\r\n                }\r\n            }\r\n        }\r\n    }\r\n}",
+            "eventTemplate": "alexa-skills-kit-intent-recipe"
           }
         },
-        "lastUpdated": 1604437906626
+        "lastUpdated": 1604466606537
       }
     },
     "openFiles": [
@@ -108,10 +115,9 @@
         },
         "boto3": {
           "name": "boto3",
-          "language": "python",
-          "version": "1.12.27",
-          "dev": true,
-          "notRemovable": false
+          "version": "1.16.10",
+          "dev": false,
+          "language": "python"
         }
       }
     }
@@ -125,7 +131,7 @@
     "platform": "AWS",
     "language": "python",
     "platformRegions": {},
-    "lastSave": 1604438597568
+    "lastSave": 1604469879391
   },
   "VCS_STATE": {
     "provider": "GitHub",
